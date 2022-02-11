@@ -1,0 +1,120 @@
+.container{
+    .row{
+        .col-md-12{
+            .owl-carousel{
+                .owl-items{
+                    .all{
+                        width: 200px;
+                        height: 80px;
+                        img{
+                            width: 120px;
+                            height: 100px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.foot{
+    background-color: $foot;
+    .container{
+        .row{
+            .col-md-3{
+                .logo{
+                    padding: 25px 0 15px 0 ;
+                    img{
+                        width: 70%;
+                        object-fit: cover;
+                    }
+                }
+                p{
+                    color: $header_color;
+                    font-size: 14px;
+                }
+                address{
+                    font-size: 14px;
+                    color: $header_color;
+                }
+            }
+            .col-md-2{
+                h3{
+                    font-size: 16px;
+                    color: $black-light;
+                }
+                ul{
+                    padding-left: 0;
+                    li{
+                        padding: 5px 0;
+                        a{
+                            font-size: 14px;
+                            color: $header_color;
+                            &:hover{
+                                color: $orange;
+                            }
+                        }
+                    }
+                }
+            }
+            .col-md-3{
+                h3{
+                    font-size: 16px;
+                    color: $grey-hed;
+                 span{
+                     font-size: 16px;
+                     color: $grey-black;
+                    }
+                }
+                .text-5{
+                    font-size: 14px;
+                    color: $small;
+                    padding: 20px 0;
+                } 
+                .input-group{
+                    input[type=text]{
+                        border-radius:30px 0 0 30px;
+                        background-color: $smoke;
+                    }
+                    ::placeholder{
+                        font-size: 12px;
+                    }
+                    button{
+                        outline:none;
+                        border: none;
+                        color: $white;
+                        background-color: $orange;
+                        font-weight: 500;
+                        border-radius: 0 30px 30px 0;
+                        &:hover{
+                            background-color: $nav-color;
+                        }
+                    }
+                }
+                .footer-icon{
+                    padding:20px 0;
+                    h5{
+                        color: $black;
+                        font-size: 14px;
+                    }
+                    a{
+                        .fab{
+                            border: 1px solid $light-grey;
+                            border-radius: 50px;
+                            color: $black;
+                            width: 35px;
+                            height: 35px;
+                            font-size: 18px;
+                            padding: 8px;
+                            margin-left: 10px;
+                            &:hover{
+                                background-color: $orange;
+                                color: $white;
+                            }
+                        }
+                    }
+                }  
+            }
+        }
+    }
+}

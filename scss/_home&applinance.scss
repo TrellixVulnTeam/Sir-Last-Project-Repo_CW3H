@@ -1,0 +1,158 @@
+.container{
+    .row{
+        .col-md-3{
+            .late{
+                h4{
+                    position: relative;
+                    font-size:18px;
+                    color: $title;
+                    font-weight: 500;
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid $light-gray-3;
+                }
+                :after{
+                    @include after;
+                }
+            }
+            .owl-carousel{
+                .card{
+                    height: 320px;
+                    .item{
+                        img{
+                            width: 100%;
+                            object-fit: cover;
+                            padding: 20px;
+                        }
+                        .content{
+                            padding:5px 10px;
+                            line-height: 20px;
+                            h4{
+                                font-size:15px;
+                                color: $del;
+                                font-weight: 300;
+                            }
+                            p{
+                                color: $black-light;
+                                font-size:14px;
+                            }
+                            a{
+                                text-decoration: none;
+                                padding-bottom:15px ;
+                                color: $orange;
+                                border-bottom: 1px solid $orange;
+                                width: 100%;
+                                .fas{
+                                    font-size:14px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .owl-nav{
+                    .owl-prev{
+                        position: absolute;
+                        top: -12%;
+                        right: 30px;
+                        font-size:18px;
+                        background-color: $top_back;
+                        &:hover{
+                            background-color: $orange;
+                            color: $white !important;
+                        }
+                    }
+                    .owl-next{
+                        position: absolute;
+                        top: -12%;
+                        right: 0;
+                        font-size:18px;
+                        background-color: $top_back;
+                        &:hover{
+                            background-color: $orange;
+                            color: $white !important;
+                        }
+                    }
+                }
+            }
+        }
+        .col-md-9{
+            .recent{
+                h4{
+                    font-size:18px;
+                    color: $title;
+                    font-weight: bold;
+                    border-bottom: 1px solid $light-gray-3;
+                    padding-bottom: 15px;
+                    position: relative;
+                }
+                :after{
+                    @include after;
+                }
+            }
+            .owl-carousel-6{
+                .owl-items{
+                    .card{
+                        border: 1px solid $light-grey-2;
+                        border-radius: 0;
+                        width: 240px;
+                        &:hover{
+                            border: 1px solid $orange;
+                            border-radius: 0;
+                        }
+                        .crd-fl{
+                            img{
+                                width: 120px;
+                                height: auto;
+                            }
+                            .content{
+                                padding: 17px;
+                                h4{
+                                    font-size: 12px;
+                                    color: $header_color;
+                                    text-transform: uppercase;
+                                }
+                                p{
+                                    font-size: 13px;
+                                    color: $grey-black;
+                                    font-weight: 500;
+                                    margin-bottom: 5px;
+                                    cursor: pointer;
+                                    &:hover{
+                                        color: $orange;
+                                    }
+                                }
+                                .far{
+                                    font-size: 10px;
+                                }
+                                .price{
+                                    span{
+                                        color: $orange;
+                                        font-weight: 500;
+                                    }
+                                    del{
+                                        font-size: 13px;
+                                        color: $nav-grey;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .owl-nav{
+                position: absolute;
+                top: -40px;
+                right: 10px !important;
+                .owl-prev,
+                .owl-next{
+                    color: $black-light;
+                    font-size: 17px;
+                    font-weight: 500;
+                    margin-left: 10px;
+                    background-color: $light-gray-3;
+                    width: 20px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}

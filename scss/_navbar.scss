@@ -1,0 +1,126 @@
+.container{
+    .row{
+        .col-md-3{
+            .logo{
+                img{
+                    width: 75%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .col-md-7{
+            .navbar{
+                .container-fluid{
+                    .collapse{
+                        .navbar-nav{
+                            .nav-item{
+                                padding-left: 20px;
+                                a{
+                                    color: $nav-color;
+                                    font-size:14px;
+                                    text-transform: uppercase;
+                                    font-weight: 500;
+                                    &:hover{
+                                        color: $orange;
+                                    }
+                                    .fas{
+                                        font-size: 12px;
+                                    }
+                                }
+                                .dropdown-menu{
+                                    width: 200px;
+                                    .dropdown-item{
+                                        color: $light-grey;
+                                        text-transform: capitalize;
+                                        font-weight: 400;
+                                        padding-top: 15px;
+                                        &:hover{
+                                            color: $white;
+                                            background-color: $dark;
+                                        }
+                                    }
+                                }
+                                .col-md-2,
+                                .col-md-5{   
+                                    h5{
+                                        color: $top_back;
+                                        font-size: 14px;
+                                        padding: 10px;
+                                        border-bottom: 1px solid $light-grey;
+                                        text-transform: uppercase;
+                                    }
+                                }
+                                .col-md-2{
+                                    img{
+                                        width: 300px;
+                                        padding: 25px 10px 10px 10px;
+                                        object-fit:cover;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .col-md-2{
+            ul{
+                li{
+                    list-style-type: none;
+                    padding: 2px;
+                    a{
+                        text-decoration: none;
+                        color: $nav-color;
+                        font-size: 14px;
+                        &:hover{
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 992px) 
+{
+	.navbar .nav-item .dropdown-menu
+    { 
+        display: none; 
+    }
+	.navbar .nav-item:hover .dropdown-menu{ 
+        display: block; 
+    }
+	.navbar .nav-item .dropdown-menu{ 
+        margin-top:0; 
+    }
+}
+@media only screen and (max-width:375px){
+    .container{
+     .row{
+         .col-md-3{
+             padding: 0 !important;
+             .logo{
+                 padding: 10px;
+                 position: absolute;
+                 img{
+                     width: 140px;
+                    }
+                }
+            }
+            .col-md-7{
+                padding: 0 !important;
+                .navbar{
+                    display:none !important;
+                }
+            }
+            .col-md-2{
+                padding: 0 !important;
+                ul{
+                    justify-content: flex-end;
+                    padding: 6px 10px 0 6px;
+                }
+            }
+        }
+    }
+}

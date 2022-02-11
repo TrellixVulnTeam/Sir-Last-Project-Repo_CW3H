@@ -1,0 +1,624 @@
+.container{
+    .row{
+        .col-md-3{
+            .deal{
+                h3{
+                    font-size: 18px;
+                    font-weight: 500;
+                    position: relative;
+                    word-spacing: 0;
+                    line-height: 1;
+                    padding-bottom:15px ;
+                    border-bottom: 1px solid #ebebeb;
+                }
+                :after{
+                    content:"";
+                    height: 3px;
+                    width: 70px;
+                    background-color: $orange;
+                    position: absolute;
+                    bottom: -1px;
+                    left: 0;
+                }
+            }
+            .carousel{
+                margin-top: 30px;
+                border: 2px solid $orange;
+                .carousel-inner{
+                    &:hover{
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    }
+                    .carousel-item{
+                        height: 370px;
+                        &:hover .btn{ 
+                            visibility: visible;
+                            opacity: 1;
+                            transition: all 0.7s;
+                            bottom: 100px;
+                        }
+                        img{
+                            padding: 40px;
+                            // width: 100%;
+                            width: 270px;
+                            object-fit: cover;
+                        }
+                        .carousel-text{
+                            position: absolute;
+                            top: 10px;
+                            left: 20px;
+                            span{
+                                font-size: 14px;
+                                color: $header_color;
+                            }
+                            h3{
+                                color: $orange;
+                                font-size: 15px;
+                            }
+                        }
+                        .carousel-off{
+                            display: flex;
+                            justify-content: space-between;
+                            span{
+                                color: $orange;
+                                font-size: 14px;
+                                text-transform: lowercase;
+                                font-weight: 500;
+                                em{
+                                    color: $orange;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                }
+                                .far{
+                                    font-size: 10px;
+                                    word-spacing: 0;
+                                    word-wrap: nowrap;
+                                }
+                            }
+                        }
+                        .expired{
+                            text-align: center;
+                            p{
+                                font-size: 14px;
+                                color: $header_color;
+                            }
+                        }
+                        .btn{
+                            position: absolute;
+                            bottom: 40%;
+                            left: 50px;
+                            visibility: hidden;
+                            opacity: 0;
+                            button{
+                                @include button;
+                                background-color: $light-gray-3;
+                                text-transform: uppercase;
+                                font-weight: 500;
+                                width: 140px;
+                            }
+                        }
+                    }
+                }
+                .carousel-control-prev-1{
+                    background-color:$light-gray-3;
+                    color: $black;
+                    position: absolute;
+                    top:-20%;
+                    padding: 3px 8px;
+                    right: 15%;
+                    .fas{
+                        font-size: 17px;
+                    }
+                }
+                .carousel-control-next-1{
+                    background-color:$light-gray-3;
+                    color: $black;
+                    position: absolute;
+                    top:-20%;
+                    padding: 3px 8px;
+                    right:0%;
+                    .fas{
+                        font-size: 17px;
+                    }
+                }
+            }
+            .sale-up{
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+            .latest-product{
+                h3{
+                    border-bottom: 1px solid $light-grey-2;
+                    font-size:18px;
+                    font-weight:500;
+                    position: relative;
+                    padding-bottom: 16px;
+                }
+                :after{
+                    content: "";
+                    position: absolute;
+                    bottom: -1px;
+                    left: 0;
+                    width: 80px;
+                    height: 3px;
+                    background-color: $orange;
+                }
+            }
+            .col-md-3{
+                .crd-3{
+                    width: 260px;
+                    border: 1px solid $light-grey-2;
+                    .crd-2-main{
+                        display: flex;
+                        justify-content: space-evenly;
+                        padding: 17px;
+                        line-height: 20px;
+                        .asci-hold{
+                            img{
+                                width: 70px;
+                            }
+                        }
+                        .asci-text{
+                            p{
+                                font-size:14px;
+                                font-weight: 500;
+                                cursor: pointer;
+                                &:hover{
+                                    color: $orange;
+                                }
+                            }
+                        }
+                        .tet{
+                            span{
+                                color: $orange;
+                                font-weight: 500;
+                                font-size:14px;
+                            }
+                        }
+                    }
+                }
+            }
+            .col-md-3{
+                .crd-4{
+                    border: 1px solid $light-gray-3;
+                    width: 260px;
+                    line-height: 10px;
+                    padding: 10px;
+                    .crd-4-main{
+                        display: flex;
+                        justify-content: space-evenly;
+                        .asci-hold-4{
+                            img{
+                                width: 40px;
+                                object-fit: cover;
+                            }
+                        }
+                        .asci-text-4{
+                            h4{
+                                font-size:16px;
+                                font-weight: 500;
+                            }
+                            p{
+                                font-size:13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .col-md-9{
+            .top{
+                h3{
+                    font-size: 18px;
+                    font-weight: 500;
+                    position: relative;
+                    word-spacing: 0;
+                    line-height: 1;
+                    padding-bottom:15px ;
+                    border-bottom: 1px solid #ebebeb;
+                }
+                :after{
+                    content:"";
+                    height: 3px;
+                    width: 70px;
+                    background-color: $orange;
+                    position: absolute;
+                    bottom: -1px;
+                    left: 0;
+                }
+            }
+            .owl-carousel-1{
+                .item{
+                    position: relative;
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                    .coroul-text{
+                        position: absolute;
+                        bottom: 10px;
+                        left: 15px;
+                        a{
+                            text-decoration: none;
+                            color: $black-light;
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .owl-nav{
+                    position: absolute;
+                    top: -40%;
+                    right: 0;
+                    .owl-prev,
+                    .owl-next{
+                        color: $black-light;
+                        font-size: 17px;
+                        background-color: $light-gray-3;
+                        width: 20px;
+                        height: 30px;
+                    }
+                }
+            }
+            .nav{
+                .nav-item{
+                    a{
+                        color: $black-light;
+                        font-size: 18px;
+                        border-bottom: 1px solid $light-gray-3;
+                        width:100%;
+                    }
+                    .active{
+                        border-bottom:2px solid $orange; 
+                        width:100%;
+                        font-weight: bold;
+                    }
+                }
+                .tab-content{
+                    .tab-pane{
+                        .crd{
+                            display: grid;
+                            grid-template-columns: repeat(3,1fr);
+                            grid-gap: 30px;
+                            padding-top: 20px;
+                            .crd-back{
+                                border: 1px solid $light-grey-2;
+                                height: 400px;
+                                width: 250px;
+                                overflow: hidden;
+                                &:hover{
+                                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                                }
+                                .crd-main{
+                                    position: relative;
+                                    &:hover .btn-1{
+                                        visibility: visible;
+                                        opacity: 1;
+                                        transition: all 0.4s;
+                                        bottom: 90px;
+                                    }
+                                    &:hover .btn-3{
+                                        visibility: visible;
+                                        opacity: 1;
+
+                                    }
+                                    img{
+                                        object-fit: cover;
+                                        width: 100%;
+                                    }
+                                    .crd-content{
+                                        left: 20px;
+                                        position: absolute;
+                                        padding-top: 20px;
+                                        top: 0;
+                                        h5{
+                                            font-size: 12px;
+                                            text-transform: uppercase;
+                                            color: $header_color;
+                                        }
+                                        p{
+                                            color: $grey-black;
+                                            font-size: 14px;
+                                            font-weight: 500;
+                                            cursor: pointer;
+                                            &:hover{
+                                                color: $orange;
+                                            }
+                                        }
+                                    }
+                                    .hr-1{
+                                        width: 80%;
+                                        margin: 0 auto;
+                                        background-color: $light-grey;
+                                    }
+                                    .crd-price{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        padding: 10px;
+                                        span{
+                                            color: $orange;
+                                            font-size: 15px;
+                                            font-weight: 500;
+                                            em{
+                                                color: $orange;
+                                                font-size: 15px;
+                                                font-weight: 500;
+                                            }
+                                            .far{
+                                                font-size: 10px;
+                                            }
+                                        }
+                                    }
+                                    .btn-1{
+                                        position: absolute;
+                                        bottom: 28%;
+                                        left:20px;
+                                        visibility: hidden;
+                                        opacity: 0;
+                                        button{
+                                            @include button;
+                                            width: 200px;
+                                            background-color: $light-gray-3;
+                                            font-size: 14px;
+                                            text-transform: uppercase;
+                                            font-weight: 500;
+                                            &:hover{
+                                                background-color: $light-grey;
+                                                color: $white;
+                                            }
+                                        }
+                                    }
+                                    .btn-3{
+                                        visibility: hidden;
+                                        opacity: 0;
+                                        .but-1{
+                                            @include button;
+                                            width: 140px;
+                                            background-color: $red;
+                                            color: $white;
+                                            border-radius: 20px;
+                                            &:hover{
+                                                background-color: $dark_red;
+                                                color: $white;
+                                            }
+                                        }
+                                        .but-2{
+                                            @include button;
+                                            margin-left: 3px;
+                                            border: 1px solid $smoke;
+                                            border-radius: 50px;
+                                            width: 40px;
+                                            height: 40px;
+                                            &:hover{
+                                                background-color: $red;
+                                                color: $white;
+                                            }
+                                            &:hover .far{
+                                                background-color: $red;
+                                                color: $white;
+                                            }
+                                            .far{
+                                                transform: translate(-5px);
+                                                font-size:16px;
+                                                color: $red;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .tab-pane{
+                        .sale-product{
+                            display: grid;
+                            grid-template-columns: repeat(3,1fr);
+                            grid-gap: 30px;
+                            .sale-product-main{
+                                img{
+                                    object-fit: cover;
+                                }
+                                .sale-content{
+                                    padding:0 30px;
+                                    h4{
+                                        font-size:19px;
+                                    }
+                                    del{
+                                        font-size:14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .seprate-holder{
+                position: relative;
+                line-height: 20px;
+                img{
+                    object-fit: cover;
+                    width: 260px;
+                    height:160px;
+                }
+                .sep-text{
+                    position: absolute;
+                    top: 0%;
+                    left: 10px;
+                    p{
+                        color: $orange;
+                        font-size:15px;
+                        font-weight:500;
+                    }
+                    del{
+                        font-size:14px;
+                        color: $del;
+                        font-weight: 400;
+                    }
+                }
+                h4{
+                    font-size:16px ;
+                    color: $black-light;
+                    font-weight: 300;
+                }
+                strong{
+                    font-weight: 600;
+                }
+                .bt-5{
+                    position: absolute;
+                    bottom: 0;
+                    padding: 20px;
+                    button{
+                        @include button;
+                        border: 2px solid $orange;
+                        border-radius: 20px;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        &:hover{
+                            color: $white;
+                            background-color: $orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .best-seller{
+        margin-top: 30px;
+        h3{
+            font-size:20px;
+            color:$grey-hed;
+            border-bottom:1px solid $light-gray-3;
+            padding-bottom: 15px;
+            position:relative;
+        }
+        :after{
+            @include after;
+        }
+    }
+}
+.crd-4{
+    .owl-carousel-2{
+            .item{
+                position:relative;
+                margin-right: 15px;
+                height: 420px;
+                img{
+                    padding: 20px;
+                }
+                &:hover{
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                }
+                &:hover .btn-1{
+                    visibility: visible;
+                    opacity: 1;
+                    transition: all 0.4s linear;
+                    bottom: 115px;
+                }
+                &:hover .btn-3{
+                    visibility: visible;
+                    opacity: 1;
+                }
+                .crd-content{
+                    position: absolute;
+                    top: 15px;
+                    left: 2px;
+                    padding:0 10px;
+                    h5{
+                        font-size:12px;
+                        color: $header_color;
+                        text-transform: uppercase;
+                    }
+                    p{
+                        color: $grey-black;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+                .hr-1{
+                    width: 80%;
+                    margin: 0 auto;
+                }
+                .crd-price{
+                    margin:10px 0;
+                    span{
+                        color: $orange;
+                        font-weight:500;
+                        font-size:15px;
+                        .far{
+                            font-size:10px;
+                        }
+                    }
+                    del{
+                        font-size:13px;
+                    }
+                }
+                .btn-1{
+                    position: absolute;
+                    bottom: 40%;
+                    left: 10%;
+                    visibility: hidden;
+                    opacity: 0;
+                    button{
+                        @include button;
+                        width: 205px;
+                        background-color: $light-grey-2;
+                        font-size:14px;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        &:hover{
+                            background-color: $light-grey;
+                            color: $white;
+                        }
+                    }
+                }
+                .btn-3{
+                    visibility: hidden;
+                    opacity: 0;
+                    .but-1{
+                        @include button;
+                        width: 140px;
+                        background-color: $red;
+                        color: $white;
+                        border-radius: 20px;
+                        &:hover{
+                            background-color: $dark_red;
+                            color: $white;
+                        }
+                    }
+                    .but-2{
+                        @include button;
+                        margin-left: 3px;
+                        border: 1px solid $smoke;
+                        border-radius: 50px;
+                        width: 40px;
+                        height: 40px;
+                        &:hover{
+                            background-color: $red;
+                            color: $white;
+                        }
+                        &:hover .far{
+                            background-color: $red;
+                            color: $white;
+                        }
+                        .far{
+                            transform: translate(-5px);
+                            font-size:16px;
+                            color: $red;
+                        }
+                    }
+                }
+            }
+            .owl-nav{
+                position: absolute;
+                top: -14% !important;
+                right: 20px !important;
+                .owl-prev,
+                .owl-next{
+                    color: $black-light;
+                    font-size: 30px;
+                    background-color: $light-gray-3;
+                    width: 20px;
+                    height: 40px;
+                }
+            }
+        }
+    }

@@ -1,0 +1,16 @@
+@mixin button {
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: $black-light;
+}
+@mixin after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: $orange;    
+}

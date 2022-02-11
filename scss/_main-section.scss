@@ -1,0 +1,87 @@
+.container{
+    .row{
+        .col-md-8{
+            .carousel{
+                .carousel-inner{
+                    .carousel-item{
+                        img{
+                            width: 100%;
+                            object-fit: cover;
+                            z-index: -1;
+                        }
+                        .content{
+                            position: absolute;
+                            top: 30%;
+                            left:14%;
+                            h2{
+                                color: $nav-color;
+                                font-size: 36px;
+                                text-transform: uppercase;
+                            }
+                            p{
+                                font-size: 14px;
+                                color: $light-grey;
+                            }
+                            .text{
+                                width:120px;
+                                a{
+                                    text-decoration: none;
+                                    color: $orange;                               }
+                                    padding: 8px 8px 8px 20px;
+                                    text-transform: uppercase;
+                                    border: 2px solid $orange;
+                                    border-radius: 30px;
+                                    font-weight: 400px;
+                                    cursor: pointer;
+                                    &:hover a{
+                                        color: $black;
+                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            .carousel-control-prev,
+            .carousel-control-next{
+                .fas{
+                    color: $black;
+                    font-size: 30px;
+                    padding: 10px 15px;
+                    background-color: $white;
+                    &:hover{
+                        color: $white;
+                        background-color: $dark
+                    }
+                }
+            }
+        }
+        .col-md-2{
+            .hold{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-gap: 10px;
+                .holder{
+                    position: relative;
+                    img{
+                        width: 220px;
+                        height: 220px;
+                        object-fit: cover;
+                    }
+                    .holder-content{
+                        position: absolute;
+                        top:30px;
+                        left: 20px;
+                        h4{
+                            color: $orange;
+                            font-size: 16px;
+                        }
+                        p{
+                            font-size: 15px;
+                            color: $black-light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
