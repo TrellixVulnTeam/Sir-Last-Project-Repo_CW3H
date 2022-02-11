@@ -107,6 +107,74 @@
     .container .row .col-md-2 ul {
       justify-content: flex-end;
       padding: 6px 10px 0 6px; } }
+.container .row .col-md-3 .navbar .nav .nav-item {
+  padding-left: 14px; }
+  .container .row .col-md-3 .navbar .nav .nav-item a {
+    padding: 15px 25px;
+    color: #ffffff;
+    width: 220px;
+    font-size: 13px;
+    background-color: #E23E1D;
+    text-transform: uppercase;
+    font-weight: 500; }
+    .container .row .col-md-3 .navbar .nav .nav-item a .fas {
+      padding-right: 10px;
+      font-size: 16px; }
+  .container .row .col-md-3 .navbar .nav .nav-item .dropdown-menu {
+    border-radius: 0; }
+    .container .row .col-md-3 .navbar .nav .nav-item .dropdown-menu a {
+      color: #000000;
+      font-size: 13px;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      border-bottom: 2px solid #f5f5f5;
+      padding: 10px 0;
+      width: 200px;
+      text-transform: capitalize;
+      z-index: 9999; }
+      .container .row .col-md-3 .navbar .nav .nav-item .dropdown-menu a:hover {
+        color: #E23E1D; }
+      .container .row .col-md-3 .navbar .nav .nav-item .dropdown-menu a .fas {
+        padding-right: 10px;
+        font-size: 15px; }
+.container .row .col-md-6 .inpt {
+  position: relative; }
+  .container .row .col-md-6 .inpt input[type=text] {
+    border: none;
+    outline: none;
+    border: 1px solid #ebebeb;
+    padding: 8px;
+    height: 40px;
+    width: 100%;
+    font-size: 13px; }
+.container .row .col-md-6 button {
+  position: absolute;
+  right: 9px;
+  bottom: 8px;
+  background-color: #E23E1D;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  height: 40px;
+  width: 120px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px; }
+.container .row .col-md-3 span {
+  color: #222222;
+  font-size: 15px;
+  padding: 0 10px; }
+.container .row .col-md-3 .fas, .container .row .col-md-3 .far {
+  margin-left: 6px;
+  cursor: pointer;
+  font-size: 20px; }
+
+@media only screen and (max-width: 375px) {
+  .container .row .col-md-3 .navbar .nav .nav-item a {
+    width: 170px !important;
+    height: 50px; } }
 .container .row .col-md-8 .carousel .carousel-inner .carousel-item img {
   width: 100%;
   object-fit: cover;
@@ -1016,74 +1084,6 @@
         background-color: #E23E1D;
         color: #ffffff; }
 
-.container .row .col-md-3 .navbar .nav .nav-item {
-  padding-left: 14px; }
-  .container .row .col-md-3 .navbar .nav .nav-item a {
-    padding: 15px 25px;
-    color: #ffffff;
-    width: 220px;
-    font-size: 13px;
-    background-color: #E23E1D;
-    text-transform: uppercase;
-    font-weight: 500; }
-    .container .row .col-md-3 .navbar .nav .nav-item a .fas {
-      padding-right: 10px;
-      font-size: 16px; }
-  .container .row .col-md-3 .navbar .nav .nav-item .dropdown-menu {
-    border-radius: 0; }
-    .container .row .col-md-3 .navbar .nav .nav-item .dropdown-menu a {
-      color: #000000;
-      font-size: 13px;
-      background-color: #ffffff;
-      margin: 0;
-      padding: 0;
-      border-bottom: 2px solid #f5f5f5;
-      padding: 10px 0;
-      width: 200px;
-      text-transform: capitalize;
-      z-index: 9999; }
-      .container .row .col-md-3 .navbar .nav .nav-item .dropdown-menu a:hover {
-        color: #E23E1D; }
-      .container .row .col-md-3 .navbar .nav .nav-item .dropdown-menu a .fas {
-        padding-right: 10px;
-        font-size: 15px; }
-.container .row .col-md-6 .inpt {
-  position: relative; }
-  .container .row .col-md-6 .inpt input[type=text] {
-    border: none;
-    outline: none;
-    border: 1px solid #ebebeb;
-    padding: 8px;
-    height: 40px;
-    width: 100%;
-    font-size: 13px; }
-.container .row .col-md-6 button {
-  position: absolute;
-  right: 9px;
-  bottom: 8px;
-  background-color: #E23E1D;
-  color: #ffffff;
-  outline: none;
-  border: none;
-  border-radius: 0;
-  height: 40px;
-  width: 120px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-size: 14px; }
-.container .row .col-md-3 span {
-  color: #222222;
-  font-size: 15px;
-  padding: 0 10px; }
-.container .row .col-md-3 .fas, .container .row .col-md-3 .far {
-  margin-left: 6px;
-  cursor: pointer;
-  font-size: 20px; }
-
-@media only screen and (max-width: 375px) {
-  .container .row .col-md-3 .navbar .nav .nav-item a {
-    padding: 0 !important;
-    width: 100px !important; } }
 * {
   margin: 0;
   padding: 0;

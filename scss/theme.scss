@@ -1,0 +1,43 @@
+@import "../scss/variable";
+@import "../scss/function";
+@import "../scss/header";
+@import "../scss/navbar";
+@import "../scss/feature_banner";
+@import "../scss/main-section";
+@import "../scss/aside_top_new_best";
+@import "../scss/middle_electric";
+@import "../scss/home&applinance";
+@import "../scss/footer_section";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+#set{
+    width: 1150px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    transform: translate(-35%);
+}
+#set-2{
+    width: 550px;
+}
+.c-col{
+    color: $golden;
+}
+.cent{
+    word-spacing: 4px;
+}
+#quick{
+    position: absolute;
+    bottom:15px;
+}   
+.hei{
+    height: 260px;
+}
+.hei-2{
+    height:300px;
+    width: 300px;
+}
